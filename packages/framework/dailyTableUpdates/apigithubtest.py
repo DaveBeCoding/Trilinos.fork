@@ -20,3 +20,9 @@ for pr in data:
     print(f"PR #{pr['number']} state: {pr['state']}")
     if pr["state"] == "closed":
         print(f"#{pr['number']}: {pr['title']}")
+
+print("\n\n\n")
+
+for pr in data:
+    # if pr["merged_at"] is not None:
+    print(f"#{pr['number']}: title : {pr['title']}: state : {pr['state']}")
