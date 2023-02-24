@@ -24,7 +24,7 @@ import json
 url = "https://api.github.com/repos/trilinos/Trilinos/pulls?q=is%3Apr+merged%3A2023-02-22T12%3A00%3A00-07%3A00..2023-02-23T12%3A00%3A00-07%3A00+base%3Adevelop"
 
 # Set the API key
-api_key = "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"
+api_key = " "
 
 # Set the headers with the API key
 headers = {
