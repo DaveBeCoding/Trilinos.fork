@@ -1,6 +1,6 @@
 import requests
 import json
-import keys
+import githubkeys
 
 url = "https://api.github.com/repos/trilinos/Trilinos/pulls?q=is%3Apr+merged%3A2023-02-22T12%3A00%3A00-07%3A00..2023-02-23T12%3A00%3A00-07%3A00+base%3Adevelop"
 
@@ -8,7 +8,7 @@ url = "https://api.github.com/repos/trilinos/Trilinos/pulls?q=is%3Apr+merged%3A2
 
 # Set the headers with the API key
 headers = {
-    "Authorization": f"Bearer {keys.api_key}"
+    "Authorization": f"Bearer {githubkeys.api_key}"
 }
 
 # Make the request with the headers
