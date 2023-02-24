@@ -3,6 +3,12 @@
 
 # url = "https://api.github.com/repos/trilinos/Trilinos/pulls?q=is%3Apr+merged%3A2023-02-23T12%3A00%3A00-07%3A00..2023-02-24T12%3A00%3A00-07%3A00+base%3Adevelop"
 
+# headers = {
+#     "Authorization": "Bearer <token>"
+# }
+
+# response = requests.get(url, headers=headers)
+
 # response = requests.get(url)
 # data = json.loads(response.text)
 # # print(data)
