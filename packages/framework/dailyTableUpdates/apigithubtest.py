@@ -26,3 +26,9 @@ print("\n\n\n")
 for pr in data:
     # if pr["merged_at"] is not None:
     print(f"#{pr['number']}: title : {pr['title']}: state : {pr['state']}")
+
+print("\n\n\n")
+
+for issue in data["items"]:
+    if "pull_request" in issue:
+        print(f"#{issue['number']}: {issue['title']}")
