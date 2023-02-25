@@ -1,6 +1,6 @@
 import requests
 import json
-import githubkeys
+import GitHubKeys
 
 repo_name = "trilinos/Trilinos"
 repo_owner = "trilinos"
@@ -8,7 +8,7 @@ repo_owner = "trilinos"
 filter_params = "is:pr merged:2023-02-22T12:00:00-07:00..2023-02-23T12:00:00-07:00 base:develop"
 
 url = f"https://api.github.com/search/issues?q=repo:{repo_owner}/{repo_name}+{filter_params}"
-api_key = githubkeys.api_key
+api_key = GitHubKeys.api_key
 
 headers = {
     "Authorization": f"Bearer {api_key}"
